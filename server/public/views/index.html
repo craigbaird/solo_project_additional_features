@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recipe Generator</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/vendors/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="vendors/sweetalert2/sweetalert2.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+
+    <!-- Angular requires -->
+    <script type="text/javascript" src="/vendors/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/vendors/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="/vendors/angular-material/angular-animate.min.js"></script>
+    <script type="text/javascript" src="/vendors/angular-material/angular-aria.min.js"></script>
+    <script type="text/javascript" src="/vendors/angular-material/angular-messages.min.js"></script>
+    <script type="text/javascript" src="/vendors/angular-material/angular-material.min.js"></script>
+
+    <!-- Sweet Alerts -->
+    <script src="vendors/sweetalert2/sweetalert2.min.js"></script>
+
+    <!-- Include a polyfill for ES6 Promises for IE11 and Android browser -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="scripts/client.min.js"></script>
+  </head>
+  <body ng-app="myApp">
+    <header ng-include="'/views/partials/header.html'"></header>
+
+    <main ng-view></main>
+  </body>
+</html>
